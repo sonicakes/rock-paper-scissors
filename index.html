@@ -58,14 +58,18 @@
 
     //   return "You lose! Paper beats rock!";
     }
-    const playerSelection = "scissors";
-    const computerSelection = computerPlay();
 
-    var resultOfGame = playRound(playerSelection, computerSelection);
 
-    console.log("The player has selected: " + playerSelection);
-    console.log("The computer has selected: " + computerSelection);
-    console.log(resultOfGame);
+    for (var i = 0; i < 5; i++) {
+        var playerSelection = prompt("Please choose from: paper, rock or scissors");
+        var computerSelection = computerPlay();
+        var resultOfGame = playRound(playerSelection, computerSelection);
+        console.log("Game " + i);
+        console.log("The player has selected: " + playerSelection);
+        console.log("The computer has selected: " + computerSelection);
+        console.log(resultOfGame);
+    }
+//TODO keep score and display winner/loser at the end of 5-round game
   </script>  
 </body>
 </html>
