@@ -1,8 +1,8 @@
 # Rock-Paper-Scissors Game
 
-### Live link 
+### Live link https://sonicakes.github.io/rock-paper-scissors/
 
-## This Game was part of Odin Project Assignments. Check the page out here https://www.theodinproject.com/courses/web-development-101/lessons/rock-paper-scissors
+#### This Game was part of Odin Project Assignments. https://www.theodinproject.com/courses/web-development-101/lessons/rock-paper-scissors
 
 ### NB: Console should be open to play this game.
 
