@@ -5,71 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+   
 </head>
 <body>
-  <script>
-    //get random option from an array of options
-    var computerPlay = function(){
-        var options = ["Rock", "Paper", "Scissors"];
-        var option = options[Math.floor(Math.random()*options.length)];
-        return option;
-    }
-    function playRound(playerSelection, computerSelection){
-        //sanitize user input
-        playerSelection = playerSelection.toUpperCase();
-        computerSelection = computerSelection.toUpperCase();
-
-        switch (playerSelection) {
-            case "ROCK":
-                    //write if statements inside
-                    if (computerSelection==="ROCK") {
-                        return "Please start again";                
-                    }else if(computerSelection==="SCISSORS"){
-                        return "Congrats! You have won!";
-                    }else{
-                        return "Sorry, you have lost this time!";
-                    }
-                break;
-            case "SCISSORS":
-                    //write if statements inside
-                    if (computerSelection==="SCISSORS") {
-                        return "Please start again";                
-                    }else if(computerSelection==="ROCK"){
-                        return "Sorry, you have lost this time";
-                    }else{
-                        return "Congrats! You have won this time!";
-                    }
-                break;
-            case "PAPER":
-                    //write if statements inside
-                    if (computerSelection==="PAPER") {
-                        return "Please start again";                
-                    }else if(computerSelection==="SCISSORS"){
-                        return "Sorry, you have lost this time";
-                    }else{
-                        return "Congrats! You have won this time!";
-                    }
-                break;
-        }
-
-        return "We dont know the winner yet";
-
-    //   return "You lose! Paper beats rock!";
-    }
-
-
-    for (var i = 0; i < 5; i++) {
-        var playerSelection = prompt("Please choose from: paper, rock or scissors");
-        var computerSelection = computerPlay();
-        var resultOfGame = playRound(playerSelection, computerSelection);
-        console.log("Game " + i);
-        console.log("The player has selected: " + playerSelection);
-        console.log("The computer has selected: " + computerSelection);
-        console.log(resultOfGame);
-    }
-//TODO keep score and display winner/loser at the end of 5-round game
-  </script>  
+    <h1>Please open the console to play the game.</h1>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
